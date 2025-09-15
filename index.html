@@ -16,20 +16,21 @@ body, html {
 }
 
 
-.parallax1 {
-  /* The image used */
-  background-image: url('background_main_001.png');
+    .parallax1 {
+      background-image: url('background_main_001.png');
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-  /* Set a specific height */
-  height: 100%;
-background-position:center; 
-background-attachment:scroll; 
--o-background-size:cover; 
--moz-background-size:cover; 
--webkit-background-size:cover; 
-background-size:cover; 
-background-repeat:no-repeat;
-}
+    @media (max-width: 768px) {
+      .parallax1 {
+        background-attachment: scroll;
+        height: auto;
+      }
+    }
 
 
 	
